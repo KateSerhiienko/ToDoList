@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  outline: none;
+}
+
+body {
+  background-color: #282d39;
+  color: #282d39;
+  fill: #282d39;
+}
+
+.wrapper {
+  width: 55vw;
+  height: 80vw;
+  margin: 10vw auto;
+  padding: 3vw;
+  border-radius: 7vw;
+  background: url("wallpaper.jpeg");
+  box-shadow: -2vw 2vw 4vw black;
+  font-family: "Quicksand", sans-serif;
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+header > img {
+  width: 80%;
+  opacity: 0.5;
+}
+
+header > h1 {
+  position: absolute;
+  top: 2vw;
+  font-size: 9vw;
+  letter-spacing: 0.3vw;
+  font-family: "Euphoria Script", cursive;
+}
+
+.input-field {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  grid-gap: 2vw;
+  margin-top: 4vw;
+}
+
+.input-field > input,
+.input-field > button {
+  padding: 1vw;
+  border: none;
+  border-radius: 1vw;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2.5vw;
+  transition: 0.3s;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 0.3vw solid rgb(40, 45, 57);
+}
+
+.input-field > input {
+  width: 100%;
+}
+
+.input-field > button {
+  color: #282d39;
+  font-weight: 700;
+}
+
+.input-field > input:focus,
+.input-field > input:hover,
+.input-field > button:hover {
+  background-color: #71bbed;
+}
+
+.input-field > button:active {
+  box-shadow: inset 10vw 8vw rgba(40, 45, 57, 0.3);
+}
+
+ul,
+.empty-notes {
+  margin-top: 5vw;
+}
+
+.list-item {
+  display: grid;
+  grid-template-columns: 1fr 12fr 1fr;
+  grid-gap: 2vw;
+  align-items: baseline;
+}
+
+.list-item svg {
+  width: 3.5vw;
+  height: 3.5vw;
+}
+
+.note-checkbox:hover {
+  fill: #71bbed;
+}
+
+.list-item > span,
+.empty-notes {
+  font-size: 3vw;
+}
+
+.note-remove:hover {
+  fill: red;
+}
