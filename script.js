@@ -3,7 +3,7 @@ const App = {
     return {
       placeholderString: "Enter note",
       inputValue: "",
-      notes: ["ewfef"],
+      notes: [],
     }
   },
   methods: {
